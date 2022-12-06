@@ -14,3 +14,4 @@ function login_form_page() {
     )
     
 }
+export default login_form_page;
