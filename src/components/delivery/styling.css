@@ -1,0 +1,47 @@
+table, th, td {
+    border: 5px solid black;
+    text-align: center;
+  }
+table, th, td {
+    border: 5px solid black;
+    text-align: center;
+    margin: auto;
+    width: 400px; 
+    padding: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 900;
+         
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+
+  img {
+    width: 470px;
+    border: 10px solid black;
+  }
+
+  body {
+
+    text-align: center;
+    
+    }
+    
+    /* Styling */
+    
+    body {
+      margin: auto;
+      width: 640px; 
+      padding: 50px;
+      font-family: 'Lexend Deca', sans-serif; 
+      color: black;    
+    }
+    
+    body, div, p {
+        font-size:  20px;
+        font-weight: 500;
+    }
