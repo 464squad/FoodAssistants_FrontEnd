@@ -1,3 +1,35 @@
+/* Styling */
+body {
+  margin: auto;
+  width: 640px; 
+  padding: 50px;
+  font-family: 'Lexend Deca', sans-serif; 
+  color: rgb(212, 182, 182);    
+}
+
+body, div, p {
+    font-size:  20px;
+    font-weight: 500;
+}
+
+body {
+
+  text-align: center;
+  
+  }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+img {
+  width: 470px;
+  border: 10px solid black;
+}
+
 table, th, td {
     border: 5px solid black;
     text-align: center;
@@ -13,35 +45,4 @@ table, th, td {
          
   }
 
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-  }
-
-  img {
-    width: 470px;
-    border: 10px solid black;
-  }
-
-  body {
-
-    text-align: center;
-    
-    }
-    
-    /* Styling */
-    
-    body {
-      margin: auto;
-      width: 640px; 
-      padding: 50px;
-      font-family: 'Lexend Deca', sans-serif; 
-      color: black;    
-    }
-    
-    body, div, p {
-        font-size:  20px;
-        font-weight: 500;
-    }
+  
