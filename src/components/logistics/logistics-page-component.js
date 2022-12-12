@@ -5,3 +5,4 @@ function logistics_page() {
   }
   export default logistics_page
     
+  //this React component contains the page element which will be displayed for the users and server

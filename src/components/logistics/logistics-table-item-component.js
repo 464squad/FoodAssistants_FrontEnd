@@ -4,3 +4,5 @@ function logistics_table_item(){
         </div>
 }
 export default logistics_table_item;
+
+//this React component will have the items organized and clearly set inside the table Component
