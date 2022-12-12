@@ -1,9 +1,12 @@
-function submission_page_component(){
-    return (
-        <div className= "submission_page_component">
-            <h1> Here is the submission page component</h1>
-        </div>
+const submission_page_component = () =>{
+    return(
+        <form className="page">
+            <input placeholder="Name" />
+            <input placeholder="Address" />
+            <input placeholder="Food" />
+            <input type="submit" />
+        </form>
     )
 }
 
-export default submission_page_component;
+export default submission_page_component
