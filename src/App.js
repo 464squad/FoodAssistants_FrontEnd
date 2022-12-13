@@ -5,7 +5,7 @@ import React from 'react';
 const App =() =>{
   return (
     <div className="app-container">
-      <table style="width:100%">
+      <table>
         <thead>
           <tr>
             <th colspan="2">Name</th>
