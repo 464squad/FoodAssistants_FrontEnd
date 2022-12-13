@@ -4,7 +4,7 @@ function deliveryTable() {
     <table>
       <thead>
         <tr>
-          <th>Name, # in Home</th>
+          <th colspan="2">Name, # in Home</th>
           <th>Grocery Items</th>
           <th>General Hygiene</th>
           <th>Feminine Hygiene</th>
