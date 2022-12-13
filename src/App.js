@@ -5,10 +5,10 @@ import React from 'react';
 const App =() =>{
   return (
     <div className="app-container">
-      <table>
+      <table style="width:100%">
         <thead>
           <tr>
-            <th>Name</th>
+            <th colspan="2">Name</th>
             <th>Address</th>
             <th>Phone Number</th>
             <th>Email</th>
