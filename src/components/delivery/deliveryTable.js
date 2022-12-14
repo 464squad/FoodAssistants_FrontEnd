@@ -1,5 +1,11 @@
-function deliveryTable() {
-    return ( <div className="app-container">
+import React from "react";
+//import App from "../../App";
+import './styling.css';
+
+
+
+const deliveryTable = () => {
+    return (  <div className="app-container">
     <h1> Delivery Table</h1>
     <table>
       <thead>
@@ -20,12 +26,10 @@ function deliveryTable() {
           <td>Feminine Wipes (1x)</td>
           <td>All purpose Cleaner (1x)</td>
         </tr>
+
       </tbody>
     </table>
-
-
-
-
-  </div>)
+    </div>
+    )
 }
-  export default deliveryTable
+  export default deliveryTable;

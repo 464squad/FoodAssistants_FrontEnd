@@ -1,10 +1,20 @@
 /* Styling */
+
+
+
+
+h1 {
+  color: rgb(70, 67, 67);
+  text-align: center;
+  font-family:monospace;
+  font-size: 44px;
+}
 body {
-  margin: auto;
+
   width: 640px; 
-  padding: 50px;
+  
   font-family: 'Lexend Deca', sans-serif; 
-  color: rgb(228, 128, 128);    
+  color: rgb(59, 122, 141);    
 }
 
 body, div, p {
@@ -25,24 +35,50 @@ body {
   width: 70%;
 }
 
-img {
-  width: 470px;
-  border: 10px solid rgb(31, 29, 29);
+/* table, th, td {
+    border: 6px solid rgb(70, 69, 69);
+    text-align: center;
+  } */
+table {
+  border: 1px solid rgb(26, 23, 23);
+  color: rgb(31, 62, 66);
+  width: 150%;
+  font-weight: 700;
 }
 
-table, th, td {
-    border: 6px solid black;
-    text-align: center;
-  }
-table, th, td {
-    border: 5px solid black;
-    text-align: center;
+    /* border: 2px solid rgb(83, 79, 79); */
+    /* text-align: left;
     margin: auto;
-    width: 300px; 
-    padding: 20px;
+    width: 1000px; 
     font-family: 'Lexend Deca', sans-serif;
-    font-weight: 900;
+    font-weight: 700;
+         
+  } */
+ th{
+    border: 2px solid rgb(83, 79, 79);
+    text-align: left;
+    margin: auto;
+    width: 1000px; 
+    padding: 1%;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
          
   }
+  td {
+    border: 2px solid rgb(83, 79, 79);
+    text-align: left;
+    margin: auto;
+    width: 1000px; 
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+         
+  }
+  /* .deliveryTable{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: cadetblue;
+  } */
+
 
   
