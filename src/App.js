@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import deliveryTable from './components/delivery/deliveryTable';
@@ -7,7 +6,7 @@ const App =() =>{
 
   return ( <div className="app-container">
   <h1> Delivery Table</h1>
-  <table>
+  <table className="table-container">
     <thead>
       <tr>
         <th>Name, # in Home</th>
