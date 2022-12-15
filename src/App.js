@@ -1,25 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import deliveryTable from './components/delivery/deliveryTable';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App =() =>{
+
+  return ( <div className="app-container">
+  <h1> Delivery Table</h1>
+  <table className="table-container">
+    <thead>
+      <tr>
+        <th>Name, # in Home</th>
+        <th>Grocery Items</th>
+        <th>General Hygiene</th>
+        <th>Feminine Hygiene</th>
+        <th>Cleaning/Health Supplies</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        {/* this is where the data goes */}
+        <td>Lameisha 3 people in house hold</td>
+        <td>chicken (1x)</td>
+        <td>Deodorant(3x)</td>
+        <td>Feminine Wipes (1x)</td>
+        <td>All purpose Cleaner (1x)</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+</div>);
+
 }
+
 
 export default App;
