@@ -14,7 +14,7 @@ body {
   width: 650px; 
   
   font-family: 'Lexend Deca', sans-serif; 
-  color: rgb(59, 122, 141);    
+  color: rgb(156, 68, 68);    
 }
 
 body {
@@ -47,7 +47,7 @@ body {
     text-align: center;
   } */
 table {
-  border: 1px solid rgb(26, 23, 23);
+  border: 2px solid rgb(26, 23, 23);
   color: rgb(31, 62, 66);
   width: 150%;
   font-weight: 700;
@@ -62,7 +62,7 @@ table {
          
   } */
  th{
-    border: 2px solid rgb(83, 79, 79);
+    border: 2px solid rgb(92, 91, 91);
     text-align: left;
     margin: auto;
     width: 1000px; 
@@ -72,7 +72,7 @@ table {
          
   }
   td {
-    border: 2px solid rgb(83, 79, 79);
+    border: 2px solid rgb(82, 80, 80);
     text-align: left;
     margin: auto;
     width: 1000px; 
