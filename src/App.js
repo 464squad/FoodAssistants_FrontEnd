@@ -3,16 +3,20 @@ import React from 'react';
 import { useState, useEffect, useMemo } from 'react';
 import { useTable } from 'react-table';
 import { COLUMNS } from './components/columns';
+import MOCK_DATA from './components/MOCK_DATA.json'
+
 
 
 const App =() =>{
-  const [data, setData] = useState([]);
-    // useeffect ...
 
-    const columns = useMemo(() => COLUMNS, []);
-    const tableInstance = useTable({ columns, data });
-    const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
-    useTable({ columns, data });
+  const columns = useMemo(()=> COLUMNS, [])
+    const data = useMemo(()=> MOCK_DATA, [])
+
+  const tableInstance =  useTable({
+        columns,
+        data
+    })
+    const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } = tableInstance
 
   return ( <div className="app-container">
   <h1> Delivery Table</h1>

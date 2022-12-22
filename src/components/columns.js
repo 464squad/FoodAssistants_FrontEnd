@@ -2,8 +2,12 @@
 
 export const COLUMNS = [
     {
+        Header: 'id',
+        accessor: 'id',
+    },
+    {
         Header: 'Name, # in Home',
-        accessor: 'Name',
+        accessor: 'name',
     },
     {
         Header: 'Gocery Items',
@@ -11,7 +15,7 @@ export const COLUMNS = [
     },
     {
         Header: 'General Hygiene',
-        accessor: 'GeneralHygiene',
+        accessor: 'hygiene',
     },
     {
         Header: 'Feminine Hygiene',
