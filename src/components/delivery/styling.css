@@ -17,6 +17,13 @@ body {
   color: rgb(59, 122, 141);    
 }
 
+body {
+  background-image: url("C:\Users\onese\Documents\GitHub\FoodAssistants_FrontEnd\src\components\delivery\public\Grocery-Delivery-Service.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 body, div, p {
     font-size:  22px;
     font-weight: 600;
