@@ -1,32 +1,50 @@
 import './App.css';
 import React from 'react';
-import deliveryTable from './components/delivery/deliveryTable';
+import { useState, useEffect, useMemo } from 'react';
+import { useTable } from 'react-table';
+import { COLUMNS } from './components/columns';
+
 
 const App =() =>{
+  const [data, setData] = useState([]);
+    // useeffect ...
+
+    const columns = useMemo(() => COLUMNS, []);
+    const tableInstance = useTable({ columns, data });
+    const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
+    useTable({ columns, data });
 
   return ( <div className="app-container">
   <h1> Delivery Table</h1>
-  <table className="table-container">
-    <thead>
-      <tr>
-        <th>Name, # in Home</th>
-        <th>Grocery Items</th>
-        <th>General Hygiene</th>
-        <th>Feminine Hygiene</th>
-        <th>Cleaning/Health Supplies</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        {/* this is where the data goes */}
-        <td>Lameisha 3 people in house hold</td>
-        <td>chicken (1x)</td>
-        <td>Deodorant(3x)</td>
-        <td>Feminine Wipes (1x)</td>
-        <td>All purpose Cleaner (1x)</td>
-      </tr>
-    </tbody>
-  </table>
+  <table {...getTableProps()}>
+                <thead>
+                    {headerGroups.map((headerGroup) => (
+                        <tr {...headerGroup.getHeaderGroupProps()}>
+                            {headerGroup.headers.map((column) => (
+                                <th {...column.getHeaderProps()}>
+                                    {column.render('Header')}
+                                </th>
+                            ))}
+                        </tr>
+                    ))}
+                </thead>
+                <tbody {...getTableBodyProps()}>
+                    {rows.map((row) => {
+                        prepareRow(row);
+                        return (
+                            <tr {...row.getRowProps()}>
+                                {row.cells.map((cell) => {
+                                    return (
+                                        <td {...cell.getCellProps()}>
+                                            {cell.render('Cell')}
+                                        </td>
+                                    );
+                                })}
+                            </tr>
+                        );
+                    })}
+                </tbody>
+            </table>
 
 
 
