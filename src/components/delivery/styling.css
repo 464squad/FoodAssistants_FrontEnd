@@ -18,7 +18,7 @@ body {
 }
 
 body {
-  background-image: url("C:\Users\onese\Documents\GitHub\FoodAssistants_FrontEnd\src\components\delivery\public\Supermarkets-delivery.jpg");
+  background-image: url("src/components/delivery/public/Supermarkets-delivery.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
