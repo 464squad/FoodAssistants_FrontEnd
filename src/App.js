@@ -1,25 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
 
+//Testing preliminary tabel data
+const data = [
+{ name: "Fred", age: 19, gender: "Male" },
+{ name: "Jollie", age: 19, gender: "Female" },
+{ name: "John", age: 25, gender: "Male"},
+]
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+return (
+	<div className="App">
+	<table>
+		<tr>
+		<th>Name</th>
+		<th>Age</th>
+		<th>Gender</th>
+		</tr>
+		{data.map((val, key) => {
+		return (
+			<tr key={key}>
+			<td>{val.name}</td>
+			<td>{val.age}</td>
+			<td>{val.gender}</td>
+			</tr>
+		)
+		})}
+	</table>
+	</div>
+);
 }
 
 export default App;
