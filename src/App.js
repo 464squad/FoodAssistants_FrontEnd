@@ -7,5 +7,5 @@ return (
 	<div className= 'App '>
 		<logistics_table_item_component />
 	</div> )
-	}
+}
 export default App

@@ -6,13 +6,12 @@ import './logistics-table-item-component.css'
 
 
 export const logistics_table_item_component = () => {
-
   const columns = useMemo(() => COLUMNS, [])
   const data = useMemo(() => MOCK_DATA, [])
 
   const tableInstance =  useTable({
     columns,
-    data
+    data,
   })
 
   const {
