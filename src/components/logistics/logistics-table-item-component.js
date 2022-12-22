@@ -1,8 +1,52 @@
-function logistics_table_item(){
-    return  <div>
-            This is the logistics item table!
-        </div>
-}
-export default logistics_table_item;
+import React, { useMemo } from 'react'
+import { useTable } from 'react-table'
+import MOCK_DATA from './MOCK_DATA.json'
+import { COLUMNS } from './logistics-table-component'
+import './logistics-table-item-component.css'
 
-//this React component will have the items organized and clearly set inside the table Component
+
+export const logistics_table_item_component = () => {
+
+  const columns = useMemo(() => COLUMNS, [])
+  const data = useMemo(() => MOCK_DATA, [])
+
+  const tableInstance =  useTable({
+    columns,
+    data
+  })
+
+  const {
+    getTableProps,
+    getTableBodyProps,
+    headerGroups,
+    rows,
+    prepareRow,
+  } = tableInstance
+
+  return (
+  <table {...getTableProps()}>
+    <thead>
+      {headerGroups.map((headerGroup) => ( 
+      <tr {...headerGroup.getHeaderGroupProps()}>
+        {headerGroup.headers.map((column) => ( 
+          <th {...column.getHeaderProps()}> {column.render('Header')} </th>
+           ))}
+      </tr>   
+      ))}
+    </thead>
+    <tbody {...getTableBodyProps()}>
+      {rows.map((row) => {
+          prepareRow(row)
+          return(
+            <tr {...row.getRowProps()}>
+              {row.cells.map((cell) => {
+                return <td {...cell.getCellProps()} >{cell.render('Cell')} </td>
+              })}
+            </tr>
+          )
+        })}
+    </tbody>
+    </table>
+  )
+
+}
